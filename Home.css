@@ -146,6 +146,10 @@ body {
   position: relative;
 }
 
+.About-us-img-2 {
+  display: none;
+}
+
 .About-us h1 {
   position: absolute;
   padding: 3rem 4rem 3rem 4rem;
@@ -240,16 +244,18 @@ body {
   color: #6c6a6a;
 }
 
+.Services h1 {
+  padding-bottom: 40px;
+}
+
 .Services h1,
 .Services h2 {
   color: #081721;
 }
 
 .our-services {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  padding-top: 4rem;
-  /* column-gap: 20px; */
+  display: flex;
+  justify-content: space-between;
 }
 
 .our-services .services:nth-child(1) h2,
@@ -286,7 +292,6 @@ body {
   list-style: none;
   display: flex;
   flex-direction: column;
-  padding-left: 1.6rem;
 }
 
 .footer-link li {
@@ -337,10 +342,17 @@ h1 {
 }
 
 p {
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 1.6;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 2.4rem;
+}
+
+.Chatbox {
+  position: fixed;
+  top: 492px;
+  right: 68px;
+  z-index: 9999;
 }
