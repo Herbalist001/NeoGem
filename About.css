@@ -19,7 +19,6 @@ body {
   font-family: "Be Vietnam Pro", sans-serif;
   line-height: 1;
   font-weight: 400;
-  /* color: #c4a85b; */
   background-color: #0c2231;
   overflow-x: hidden;
 }
@@ -102,16 +101,16 @@ body {
 
 .Hero-textbox-inner {
   width: 60%;
-  padding: 0px 40px 80px 40px;
+  padding: 0 4rem 8rem 4rem;
 }
 
 .Hero-textbox-inner p {
-  padding-top: 10px;
+  padding-top: 1rem;
 }
 
 .Welcome {
-  width: 912px;
-  margin-top: 50px;
+  width: 91.2rem;
+  margin-top: 5rem;
   color: #c4a85b;
 }
 
@@ -125,7 +124,7 @@ body {
 /* ******************* */
 .Who-we-are-Section {
   background-color: #fefefe;
-  margin-top: 50px;
+  margin-top: 5rem;
 }
 
 .Who-we-are-Container {
@@ -134,7 +133,7 @@ body {
 }
 
 .Who-we-are-us h1 {
-  padding-bottom: 30px;
+  padding-bottom: 3rem;
   color: #081721;
 }
 
@@ -143,7 +142,7 @@ body {
 }
 
 .Who-we-are-us {
-  padding: 30px 40px 30px 40px;
+  padding: 3rem 4rem 3rem 4rem;
 }
 
 .Mission div img {
@@ -156,7 +155,7 @@ body {
 /* ********************* */
 .our-services-section {
   background-color: #fefefe;
-  padding: 80px 40px 80px 40px;
+  padding: 8rem 4rem 8rem 4rem;
 }
 
 .Services h1 {
@@ -173,7 +172,7 @@ body {
 .our-services {
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
+  margin-top: 4rem;
   color: #070606;
 }
 
@@ -186,20 +185,20 @@ body {
 }
 
 .services img {
-  width: 356px;
-  height: 244px;
+  width: 35.6rem;
+  height: 24.4rem;
   opacity: 0;
 }
 
 .services p {
-  width: 332px;
+  width: 33.2rem;
 }
 
 .services {
   display: flex;
   align-items: center;
   padding: 2.4rem 0.8rem;
-  border-radius: 8px;
+  border-radius: 0.8rem;
 }
 
 /* ******************* */
@@ -208,8 +207,8 @@ body {
 
 .our-values {
   background-color: #fefefe;
-  padding: 0 40px 50px 40px;
-  margin-bottom: 40px;
+  padding: 0 10rem 5rem 10rem;
+  margin-bottom: 4rem;
 }
 
 .card-section h1 {
@@ -220,21 +219,21 @@ body {
 .Our-values {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 50px;
+  column-gap: 5rem;
   color: #0c2231;
 }
 
 .card-section .button {
   display: block;
-  margin: 50px auto 0 auto;
+  margin: 5rem auto 0 auto;
 }
 
 .our-values .Value:nth-child(1) h2,
 .our-values .Value:nth-child(2) h2,
 .our-values .Value:nth-child(3) h2 {
-  padding: 5px 10px 5px 10px;
-  border-radius: 4px;
-  margin: 25px 0 25px 0;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 0.4rem;
+  margin: 2.5rem 0 2.5rem 0;
 }
 
 .our-values .Value:nth-child(1) h2 {
@@ -254,8 +253,8 @@ body {
 
 .Value {
   padding: 2.4rem 0.8rem;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.16);
-  border-radius: 8px;
+  box-shadow: 0.4rem 0.4rem 0.8rem rgba(0, 0, 0, 0.16);
+  border-radius: 0.8rem;
 }
 
 .button {
@@ -263,9 +262,9 @@ body {
   text-decoration: none;
   text-align: center;
 
-  width: 600px;
-  padding: 10px 25px 10px 25px;
-  border-radius: 100px;
+  width: 60rem;
+  padding: 1rem 2.5rem 1rem 2.5rem;
+  border-radius: 10rem;
   background-color: #0a1c29;
   color: #fff;
   /* margin-top: 50px; */
@@ -276,7 +275,7 @@ body {
 /* ************************* */
 
 .Footer-section {
-  padding: 100px 40px 100px 40px;
+  padding: 10rem 4rem 10rem 4rem;
   color: #fefefe;
 }
 
@@ -325,12 +324,12 @@ body {
 }
 
 .info p {
-  padding: 0 4px 12px 4px;
+  padding: 0 0.4rem 1.2rem 0.4rem;
 }
 
 .info h2 {
   color: #c4a85b;
-  padding: 0 4px 12px 4px;
+  padding: 0 0.4rem 1.2rem 0.4rem;
 }
 
 .Why-Neogem {
@@ -338,16 +337,21 @@ body {
 }
 
 h1 {
-  font-size: 32px;
-  /* line-height: auto;
-  letter-spacing: 2px; */
+  font-size: 3.2rem;
 }
 
 p {
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 1.6;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 2.4rem;
+}
+
+.Chatbox {
+  position: fixed;
+  top: 492px;
+  right: 68px;
+  z-index: 9999;
 }
