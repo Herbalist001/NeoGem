@@ -124,6 +124,7 @@ body {
 }
 
 .Welcome {
+  padding: 0 4rem;
   width: 91.2rem;
   color: #eed385;
 }
