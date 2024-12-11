@@ -61,9 +61,13 @@
     font-size: 38.33%;
   }
 
+  .Hero-Section {
+    padding: 0;
+  }
+
   .Hero-textbox-inner {
     width: 85%;
-    padding: 0 3rem 6rem 3rem;
+    /* padding: 0 3rem 6rem 3rem; */
   }
 
   .About-Container {
@@ -91,7 +95,17 @@
 @media (max-width: 45em) {
   .Hero-textbox-inner {
     width: 100%;
-    padding: 0 1.5rem 3rem 1.5rem;
+  }
+
+  .Hero-Container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(img/Neo\ Mob001.jpg);
+    background-size: cover;
+    background-position: center;
   }
 
   .Welcome {
