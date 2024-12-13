@@ -97,17 +97,6 @@
     width: 100%;
   }
 
-  .Hero-Container {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
-
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      url(img/Neo-Mob001.jpg); */
-    background-position: 60% 40%;
-    background-size: 250vw 100vh;
-  }
-
   .Welcome {
     width: 100%;
     margin-top: 5rem;
@@ -232,6 +221,18 @@
   .main-nav-list:link,
   .main-nav-list:visited {
     font-size: 3rem;
+  }
+
+  .Hero-Container {
+    position: relative;
+    height: 50vh;
+    overflow: hidden;
+
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(img/Neo-Mob001.jpg); */
+    background-position: 60% 40%;
+    background-size: cover;
+    background-size: 300vw 50vh;
   }
 
   .our-values {
