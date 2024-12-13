@@ -23,7 +23,6 @@
 
   .Hero-textbox-inner {
     width: 70%;
-    padding: 0 3rem 6rem 3rem;
   }
 
   .About-Container {
@@ -67,12 +66,16 @@
 
   .Hero-textbox-inner {
     width: 85%;
-    /* padding: 0 3rem 6rem 3rem; */
   }
 
   .About-Container {
     display: grid;
     grid-template-columns: 0.25fr 1.75fr;
+  }
+
+  .icon {
+    height: 3rem;
+    width: 3rem;
   }
 
   .Chatbox {
@@ -225,14 +228,14 @@
 
   .Hero-Container {
     position: relative;
-    height: 50vh;
+    height: 70vh;
     overflow: hidden;
 
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
       url(img/Neo-Mob001.jpg); */
     background-position: 60% 40%;
     background-size: cover;
-    background-size: 300vw 50vh;
+    background-size: 300vw 70vh;
   }
 
   .our-values {
@@ -254,7 +257,7 @@
 
   .Chatbox {
     position: fixed;
-    top: 592px;
+    top: 750px;
     right: 20px;
     z-index: 9999;
 
