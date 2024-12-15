@@ -238,6 +238,10 @@
     background-size: 300vw 70vh;
   }
 
+  .Welcome {
+    padding: 0 4rem;
+  }
+
   .our-values {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -257,12 +261,44 @@
 
   .Chatbox {
     position: fixed;
-    top: 750px;
+    top: 680px;
     right: 20px;
     z-index: 9999;
 
     width: 93.4px;
     height: 93.4px;
+  }
+
+  .Mobile-Nav {
+    display: block;
+    position: fixed;
+    top: 764px;
+    right: 0px;
+
+    background-color: #0c2231;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+    z-index: 9999;
+    width: 100%;
+
+    border: 4px solid #eed385;
+    border-radius: 3rem;
+  }
+
+  .Mobile-Nav img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .Mobile-Nav li {
+    /* align-self: center; */
+    text-align: center;
+  }
+
+  .Mobile-Nav p {
+    color: #eed385;
+    font-size: 18px;
   }
 }
 
