@@ -195,7 +195,7 @@ body {
 }
 
 /* ********************** */
-/* Our-Vision Section */
+/* Our-Services-Section */
 /* ********************* */
 .our-services-section {
   background-color: #fefefe;
@@ -220,11 +220,11 @@ body {
   color: #070606;
 }
 
-.our-services .services:nth-child(2) {
+.services:nth-child(2) {
   align-self: center;
 }
 
-.our-services .services:nth-child(3) {
+.services:nth-child(3) {
   align-self: flex-end;
 }
 
@@ -623,7 +623,7 @@ h2 {
       url(img/Neo-Mob010.jpg); */
     background-position: 40% 60%;
     background-size: cover;
-    background-size: 250vw 70vh;
+    background-size: 300vw 70vh;
   }
 
   .Welcome {
@@ -648,10 +648,33 @@ h2 {
     grid-template-columns: 1fr;
     margin-top: 4rem;
     color: #0c2231;
+    gap: 20px;
+  }
+
+  .our-values {
+    background-color: #fefefe;
+    padding: 0 4rem 5rem 4rem;
+    margin-bottom: 4rem;
   }
 
   .Value {
     width: 100%px;
+  }
+
+  .button {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+
+    width: 30rem;
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    border-radius: 10rem;
+    background-color: #0a1c29;
+    color: #fff;
+  }
+
+  .services p {
+    width: 23.2rem;
   }
 
   .Chatbox {
