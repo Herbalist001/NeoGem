@@ -9,7 +9,7 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" href="img/Logo 1.jpg" />
+    <link rel="icon" href="img/Item1.svg" />
 
     <link rel="apple-touch-icon" href="img/apple favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -43,7 +43,7 @@
   </head>
   <body>
     <header class="header">
-      <img class="Logo" alt="NeoGem Logo" src="img/Logo 2.png" />
+      <img class="Logo" alt="NeoGem Logo" src="img/NeoGem.png" />
 
       <nav class="main-nav">
         <ul class="main-nav-list">
@@ -55,19 +55,87 @@
           </li>
         </ul>
       </nav>
+
+      <img src="img/Chatbox.svg" class="Chatbox" width="200" height="100" />
+
+      <div class="Mobile-Nav">
+        <li>
+          <a class="footer-link" href="index.html"
+            ><img src="img/Item1.svg" />
+            <p>Home</p></a
+          >
+        </li>
+
+        <li class="Mob-Service">
+          <a class="footer-link" href="Service.html"
+            ><img src="img/Item2.svg"
+          /></a>
+          <a class="footer-link" href="#" id="service-link"><p>Services</p></a>
+
+          <div id="overlay" class="overlay">
+            <div class="overlay-content">
+              <ul class="overlay-item">
+                <img class="Logo" alt="NeoGem Logo" src="img/NeoGem.png" />
+
+                <div>
+                  <li>
+                    <a class="footer-link" href="book-keeping.html"
+                      ><h2>Book Keeping</h2></a
+                    >
+                  </li>
+
+                  <li>
+                    <a class="footer-link" href="business-planning.html"
+                      ><h2>Business Pkanning</h2></a
+                    >
+                  </li>
+
+                  <li>
+                    <a class="footer-link" href="M&A.html"
+                      ><h2>Mergers & Acquisition (M&A) Advisory</h2></a
+                    >
+                  </li>
+
+                  <li>
+                    <a class="footer-link" href="HR.html"
+                      ><h2>Human Resource & Talent Management</h2></a
+                    >
+                  </li>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <a class="footer-link" href="About.html"
+            ><img src="img/Item3.svg" />
+            <p>About Us</p></a
+          >
+        </li>
+        <li>
+          <a class="footer-link" href="#footer"
+            ><img src="img/Item4.svg" />
+            <p>Contact Us</p></a
+          >
+        </li>
+      </div>
     </header>
     <main>
       <section class="Hero-Section">
-        <div class="Hero-Container">
-          <div class="Hero-textbox-inner">
-            <h1>
-              At NeoGem, we are passionate about helping SMEs achieve their full
-              potentials.
-            </h1>
-            <p>
-              We’re committed to delivering results driven solution that drives
-              efficiency, enhanced performance and innovation.
-            </p>
+        <div class="hero-box">
+          <div class="Hero-Container">
+            <img src="img/Neo014.jpg" alt="Hero-Image" />
+            <div class="Hero-textbox-inner">
+              <h1>
+                At NeoGem, we are passionate about helping SMEs achieve their
+                full potentials.
+              </h1>
+              <p>
+                We’re committed to delivering results driven solution that
+                drives efficiency, enhanced performance and innovation.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -98,7 +166,7 @@
           </div>
           <div class="Mission">
             <div><img src="img/Neo013.jpg" alt="Testimonial image" /></div>
-            <a href="M&A.html" class="button"><p>Contact Us</p></a>
+            <a href="M&A.html" class="button"><p>Learn More</p></a>
           </div>
         </div>
       </section>
@@ -106,9 +174,9 @@
       <section class="Our-Service">
         <div class="Who-we-are-Container">
           <div class="Mission">
-            <div><img src="img/Neo014.jpg" alt="Testimonial image" /></div>
+            <div><img src="img/Neo044.jpg" alt="Testimonial image" /></div>
             <a href="business-planning.html" class="button"
-              ><p>Contact Us</p></a
+              ><p>Learn More</p></a
             >
           </div>
           <div class="Who-we-are-us">
@@ -168,7 +236,7 @@
         <div class="Who-we-are-Container">
           <div class="Mission">
             <div><img src="img/Neo016.jpg" alt="Testimonial image" /></div>
-            <a href="HR.html" class="button"><p>Contact Us</p></a>
+            <a href="HR.html" class="button"><p>Learn More</p></a>
           </div>
           <div class="Who-we-are-us">
             <h1>Human Resources and Talent Management Consulting</h1>
@@ -194,11 +262,11 @@
         </div>
       </section>
 
-      <footer class="Footer-section">
+      <footer class="Footer-section" id="footer">
         <div class="footer">
           <div>
             <div>
-              <img src="img/SVG logo.svg" alt="Logo" width="285" height="100" />
+              <img class="Logo" src="img/NeoGem.png" alt="Logo" />
             </div>
 
             <ul class="footer-link">
@@ -233,11 +301,19 @@
 
           <div class="info">
             <h2>Quick Links</h2>
-            <p>Book Keeping</p>
-            <p>Business Planning</p>
-            <p>Mergers & Acquisition</p>
-            <p>HR & Talent Consultation</p>
-            <p>About Us</p>
+            <a class="footer-link" href="book-keeping.html"
+              ><p>Book Keeping</p></a
+            ><br />
+            <a class="footer-link" href="business-planning.html"
+              ><p>Business Planning</p></a
+            ><br />
+            <a class="footer-link" href="M&A.html"
+              ><p>Mergers & Acquisition</p></a
+            ><br />
+            <a class="footer-link" href="HR.html"
+              ><p>HR & Talent Consultation</p></a
+            ><br />
+            <a class="footer-link" href="About.html"><p>About Us</p></a>
           </div>
         </div>
       </footer>
