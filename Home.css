@@ -1,348 +1,456 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="description"
-      content="At NeoGem, we empower small and medium-sized enterprises
-      (SMEs) with the insights, strategies, and support they need to
-      thrive in today’s competitive business environment."
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    <link rel="icon" href="img/Item1.svg" />
+html {
+  /* font-size: 10px */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of users browser font-size settings */
+  font-size: 62.5%;
+  overflow-x: hidden;
 
-    <link rel="apple-touch-icon" href="img/apple favicon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+  /* Dose not work on safari */
+  /* scroll-behavior: smooth; */
+}
 
-    <link rel="stylesheet" href="Home.css" />
-    <link rel="stylesheet" href="quries.css" />
-    <script defer src="book-keeping-script.js"></script>
+body {
+  font-family: "Be Vietnam Pro", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  /* color: #c4a85b; */
+  background-color: #0c2231;
+  overflow-x: hidden;
+}
 
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule=""
-      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
-    ></script>
+/* *************************** */
+/* Header */
+/* ************************* */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #0c2231; */
 
-    <script
-      defer
-      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
-    ></script>
-    <script defer src="js/script.js"></script>
+  height: 9.6rem;
+  padding: 0 4rem;
+  position: relative;
+}
 
-    <title>NeoGem &mdash; Advisory</title>
-  </head>
-  <body>
-    <header class="header">
-      <img class="Logo" alt="NeoGem Logo" src="img/NeoGem.png" />
+.Logo {
+  height: 3rem;
+}
 
-      <nav class="main-nav">
-        <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="index.html">Home</a></li>
-          <li><a class="main-nav-link" href="Service.html">Services</a></li>
-          <li><a class="main-nav-link" href="About.html">About Us</a></li>
-          <li>
-            <a class="main-nav-link nav-cta" href="#Contact-Us">Contact Us</a>
-          </li>
-        </ul>
-      </nav>
+/* ************************** */
+/* Navigation */
+/* ************************ */
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+}
 
-      <img src="img/Chatbox.svg" class="Chatbox" width="200" height="100" />
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #c4a85b;
+  font-weight: 600;
+  font-size: 1.8rem;
+  /* transition: all 0.3s; */
+  padding: 1rem;
+}
 
-      <div class="Mobile-Nav">
-        <li>
-          <a class="footer-link" href="index.html"
-            ><img src="img/Item1.svg" />
-            <p>Home</p></a
-          >
-        </li>
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #0c2231;
+  background-color: #eed385;
+  border-radius: 0.9rem;
+}
 
-        <li class="Mob-Service">
-          <a class="footer-link" href="Service.html"
-            ><img src="img/Item2.svg" /></a>
-          <a class="footer-link" href="#" id="service-link"
-            ><p>Services</p></a>
-    
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 0.9rem;
+  color: #0c2231;
+  /* color: #fefefe; */
+  background-color: #c4a85b;
+}
 
-          <div id="overlay" class="overlay">
-            <div class="overlay-content">
-              <ul class="overlay-item">
-                <img class="Logo" alt="NeoGem Logo" src="img/NeoGem.png" />
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #f5e4b6;
+}
 
-                <div>
-                  <li class="overlay-services">
-                    <ion-icon class="icon" name="chevron-forward-outline"></ion-icon>
-                    <a class="footer-link" href="book-keeping.html"
-                      ><h2>Book Keeping</h2></a
-                    >
-                  </li>
+/* ***************** */
+/* Hero Section */
+/* *************** */
+.Hero-Section {
+  padding: 0 4rem;
+}
 
-                  <li class="overlay-services">
-                    <ion-icon class="icon" name="chevron-forward-outline"></ion-icon>
+.hero-box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5rem;
+}
 
-                    <a class="footer-link" href="business-planning.html"
-                      ><h2>Business Planning</h2></a
-                    >
-                  </li>
+.Hero-Container {
+  position: relative;
+  overflow: hidden;
 
-                  <li class="overlay-services">
-                    <ion-icon class="icon" name="chevron-forward-outline"></ion-icon>
-                    <a class="footer-link" href="M&A.html"
-                      ><h2>Mergers & Acquisition (M&A) Advisory</h2></a
-                    >
-                  </li>
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(img/Neo001.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
-                  <li class="overlay-services">
-                    <ion-icon class="icon" name="chevron-forward-outline"></ion-icon>
-                    <a class="footer-link" href="HR.html"
-                      ><h2>Human Resource & Talent Management</h2></a
-                    >
-                  </li>
-                </div>
-              </ul>
-            </div>
-          </div>
-        </li>
+  height: 100vh;
+  width: 100%;
+}
 
-        <li>
-          <a class="footer-link" href="About.html"
-            ><img src="img/Item3.svg" />
-            <p>About Us</p></a
-          >
-        </li>
-        <li>
-          <a class="footer-link" href="#footer"
-            ><img src="img/Item4.svg" />
-            <p>Contact Us</p></a
-          >
-        </li>
-      </div>
+.Hero-Container img {
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+}
 
+.Hero-textbox-inner {
+  position: absolute;
+  bottom: 0;
+  width: 60%;
+  color: #fff;
+  padding: 0 3rem 8rem 3rem;
+}
 
-    </header>
-    <main>
-      <section class="Hero-Section">
-        <div class="hero-box">
-          <div class="Hero-Container">
-            <img src="img/Neo001.jpg" alt="Hero-Image" />
-            <div class="Hero-textbox-inner">
-              <h1>
-                Tailored Innovation and Expert Strategies For Financial Success
-                and Business Growth
-              </h1>
-              <p>That’s the NeoGem signature</p>
-            </div>
-          </div>
-          <div class="Welcome">
-            <h1>Welcome to NeoGem Advisory</h1>
-            <p>
-              At NeoGem, we empower small and medium-sized enterprises
-              (SMEs) with the insights, strategies, and support they need to
-              thrive in today’s competitive business environment. Our team of
-              seasoned professionals is dedicated to helping clients navigate
-              complex challenges, maximize opportunities, and achieve sustained
-              success.
-            </p>
-          </div>
-        </div>
-      </div>
-      </section>
+.Welcome {
+  width: 91.2rem;
+  color: #eed385;
+}
 
-      <section class="About-Section">
-        <div class="About-Container">
-          <div class="About-us">
-            <h1>About Us</h1>
-            <img
-              src="img/About 001.png"
-              alt="About-us-image"
-              class="About-us-img-1"
-            />
-            <img
-              src="img/About 001 mob.png"
-              alt="About-us-image"
-              class="About-us-img-2"
-            />
-          </div>
-          <div class="Mission">
-            <div class="our-mission">
-              <h1>Missions</h1>
-              <h2><i>Empowering SMEs to Thrive</i></h2>
-              <p>
-                To deliver expert advisory services that drive sustainable
-                growth
-              </p>
-            </div>
-            <div class="card-section">
-              <h1>Our Values</h1>
-              <div class="our-values">
-                <div class="Value">
-                  <img
-                    src="img/rating.png"
-                    alt="Expertise icon"
-                    width="80"
-                    height="80"
-                  />
-                  <h2>Expertise</h2>
-                  <p>
-                    An unwavering commitment to staying ahead of the curve....
-                  </p>
-                </div>
-                <div class="Value">
-                  <img
-                    src="img/image 13.jpg"
-                    alt="Expertise icon"
-                    width="80"
-                    height="80"
-                  />
-                  <h2>Trust</h2>
-                  <p>We build trust through transparent communication....</p>
-                </div>
-                <div class="Value">
-                  <img
-                    src="img/Medal.jpg"
-                    alt="Expertise icon"
-                    width="80"
-                    height="80"
-                  />
-                  <h2>Quality</h2>
-                  <p>
-                    Dedication to delivering exceptional services with
-                    creativity and....
-                  </p>
-                </div>
-              </div>
-              <a href="#see-more" class="button"><p>See More</p></a>
-            </div>
-          </div>
-        </div>
-      </section>
+.Welcome p {
+  padding-top: 1rem;
+  color: #fff;
+}
 
-      <section class="our-services-section">
-        <div class="Services">
-          <h1>Explore our services and get started</h1>
-          <div class="our-services">
-            <div class="services">
-              <img
-                src="img/Neo009.jpg"
-                alt="Expertise icon"
-                width="100%"
-                height=""
-              />
-              <h2>Book Keeping</h2>
-              <p>
-                Our Bookkeeping Services offer comprehensive support to ensure
-                your financial records are meticulously maintained and compliant
-                ...
-              </p>
-            </div>
-            <div class="services">
-              <img
-                src="img/card001.png"
-                alt="Expertise icon"
-                width="100%"
-                height=""
-              />
-              <h2>Business Planning</h2>
-              <p>
-                We will work closely with you to understand your business,
-                identify opportunities and challenges, and create strategies to
-                drive growth and profitability.
-              </p>
-            </div>
-            <div class="services">
-              <img
-                src="img/card002.png"
-                alt="Expertise icon"
-                width="100%"
-                height=""
-              />
-              <h2>Mergers & Acquisition Services</h2>
-              <p>
-                Our experienced team provides expert guidance throughout the
-                entire M&A process...
-              </p>
-            </div>
-            <div class="services">
-              <img
-                src="img/card003.png"
-                alt="Expertise icon"
-                width="100%"
-                height=""
-              />
-              <h2>Human Resources & Talent Management</h2>
-              <p>
-                Our HR and Talent services are designed to help you attract,
-                retain, and develop top talent.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+/* .Hero-Section {
+  padding: 0 4rem;
+}
 
-      <footer class="Footer-section" id="footer">
-        <div class="footer">
-          <div>
-            <div>
-              <img class="Logo" src="img/NeoGem.png" alt="Logo" />
-            </div>
+.Hero-Container {
+  height: 100vh;
+  position: relative;
+}
 
-            <ul class="footer-link">
-              <li>
-                <img
-                  class="icon"
-                  src="img/Footer icon1.svg"
-                  alt="Footer-icon"
-                />
-                <a class="footer-link" href="tel:415-201-6370"
-                  >+234 802 588 9295</a
-                >
-              </li>
-              <li>
-                <ion-icon class="icon" name="mail-unread-outline"></ion-icon>
-                <a class="footer-link" href="mailto:hello@omifood.com"
-                  >info@neogemadvisory.com</a
-                >
-              </li>
-              <li>
-                <ion-icon class="icon" name="logo-linkedin"></ion-icon>
-                <a
-                  class="footer-link"
-                  href="https://https://www.linkedin.com/company/neogem-advisory"
-                  target="_blank"
-                >
-                  <u> NeoGem Professional Services</u>
-                </a>
-              </li>
-            </ul>
-          </div>
+.Hero-textbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
 
-          <div class="info">
-            <h2>Quick Links</h2>
-            <a class="footer-link" href="book-keeping.html"
-                  ><p>Book Keeping</p></a><br>
-            <a class="footer-link" href="business-planning.html"
-                  ><p>Business Planning</p></a><br>
-            <a class="footer-link" href="M&A.html"
-                  ><p>Mergers & Acquisition</p></a><br>
-            <a class="footer-link" href="HR.html"
-                  ><p>HR & Talent Consultation</p></a><br>
-            <a class="footer-link" href="About.html"
-                  ><p>About Us</p></a>
-          </div>
-        </div>
-      </footer>
-    </main>
-  </body>
-</html>
+.Hero-Container img {
+  width: 100%;
+  height: 100;
+  background-size: cover;
+}
+
+.Hero-textbox-inner {
+  position: absolute;
+  width: 60%;
+  color: #fff;
+  padding: 0 3rem 8rem 3rem;
+}
+
+.Hero-textbox-inner p {
+  padding-top: 1rem;
+}
+
+.Welcome {
+  width: 91.2rem;
+  margin-top: 5rem;
+  color: #eed385;
+}
+
+.Welcome p {
+  padding-top: 1rem;
+  color: #fff;
+} */
+
+/* .Hero-Section {
+  padding: 0 4rem;
+}
+
+.Hero-Container {
+  height: 100vh;
+  position: relative;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(img/Neo001.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fefefe;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.Hero-textbox-inner {
+  width: 60%;
+  padding: 0 4rem 8rem 4rem;
+}
+
+.Hero-textbox-inner p {
+  padding-top: 1rem;
+}
+
+.Welcome {
+  width: 91.2rem;
+  margin-top: 5rem;
+  color: #eed385;
+}
+
+.Welcome p {
+  padding-top: 1rem;
+  color: #fff;
+} */
+
+/* ******************** */
+/* About-Section */
+/* ******************* */
+.About-Section {
+  background-color: #fefefe;
+  border-radius: 2rem 2rem 0 0;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.About-Container {
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr;
+}
+
+.About-us {
+  position: relative;
+}
+
+.About-us-img-2 {
+  display: none;
+}
+
+.About-us h1 {
+  position: absolute;
+  padding: 3rem 4rem 3rem 4rem;
+  color: #eed385;
+}
+
+.Mission {
+  padding: 3rem 4rem 3rem 4rem;
+}
+
+.our-mission {
+  padding-bottom: 4.4rem;
+}
+
+.our-mission h1 {
+  padding: 0 0 2rem 0;
+  color: #0a1c29;
+}
+
+.our-mission h2 {
+  padding: 0 0 2rem 0;
+  color: #0a1c29;
+}
+
+.our-mission p {
+  color: #070606;
+}
+
+.card-section h1 {
+  color: #0a1c29;
+}
+
+.our-values {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 2rem;
+  margin-top: 4rem;
+  color: #0c2231;
+}
+
+.our-values .Value:nth-child(1) h2,
+.our-values .Value:nth-child(2) h2,
+.our-values .Value:nth-child(3) h2 {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 0.4rem;
+  margin: 2.5rem 0 2.5rem 0;
+}
+
+.our-values .Value:nth-child(1) h2 {
+  background-color: #061119;
+  color: #c4a85b;
+}
+
+.our-values .Value:nth-child(2) h2 {
+  background-color: #0a1c29;
+  color: #eed385;
+}
+
+.our-values .Value:nth-child(3) h2 {
+  background-color: #354753;
+  color: #f8edce;
+}
+
+.Value {
+  padding: 2.4rem 0.8rem;
+  box-shadow: 0.4rem 0.4rem 0.8rem rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
+}
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+
+  width: 24rem;
+  padding: 1rem 2.5rem 1rem 2.5rem;
+  border-radius: 10rem;
+  background-color: #0a1c29;
+  color: #fff;
+}
+
+.card-section .button {
+  display: block;
+  margin: 5rem auto 0 auto;
+}
+
+/* ********************** */
+/* Our Services Section */
+/* ********************* */
+.our-services-section {
+  background-color: #fefefe;
+  padding: 8rem 4rem 8rem 4rem;
+  color: #6c6a6a;
+}
+
+.Services h1 {
+  padding-bottom: 40px;
+}
+
+.Services h1,
+.Services h2 {
+  color: #081721;
+}
+
+.our-services {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1.7rem;
+}
+
+.our-services .services:nth-child(1) h2,
+.our-services .services:nth-child(2) h2,
+.our-services .services:nth-child(3) h2,
+.our-services .services:nth-child(4) h2 {
+  padding: 5px 0px 5px 0px;
+  border-radius: 4px;
+  margin: 25px 0 25px 0;
+}
+
+.services {
+  padding: 2.4rem 0.8rem;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
+}
+
+/* *************************** */
+/* footer Section */
+/* ************************* */
+
+.Footer-section {
+  padding: 100px 40px 100px 40px;
+  color: #fefefe;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer ul {
+  padding-top: 10px;
+}
+
+.footer-link li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 1rem 0 1rem 0;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  color: #eed385;
+  transition: all 0.3s;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.8rem;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
+}
+
+.icon {
+  color: #c4a85b;
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.info {
+  width: 35rem;
+}
+
+.info p {
+  padding: 0 4px 12px 4px;
+}
+
+.info h2 {
+  color: #c4a85b;
+  padding: 0 4px 12px 4px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+p {
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+.Chatbox {
+  position: fixed;
+  top: 492px;
+  right: 68px;
+  z-index: 9999;
+}
+
+.Mobile-Nav {
+  display: none;
+}
+
+.overlay-services {
+  display: flex;
+}
+
+.overlay-services h2 {
+  margin-top: 1px;
+}
