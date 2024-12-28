@@ -325,11 +325,11 @@
   .overlay-content {
     position: absolute;
     top: 50%;
-    left: 30%;
+    left: 40%;
     transform: translate(-50%, -50%);
     color: #eed385;
     background-color: #0c2231;
-    width: 50%;
+    width: 60%;
     height: 80%;
     padding: 20px;
     border-radius: 10px;
