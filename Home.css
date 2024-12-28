@@ -39,7 +39,7 @@ body {
 }
 
 .Logo {
-  height: 4rem;
+  height: 3rem;
 }
 
 /* ************************** */
@@ -445,4 +445,12 @@ h2 {
 
 .Mobile-Nav {
   display: none;
+}
+
+.overlay-services {
+  display: flex;
+}
+
+.overlay-services h2 {
+  margin-top: 1px;
 }
