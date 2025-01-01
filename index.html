@@ -58,30 +58,33 @@
         </ul>
       </nav>
 
+
     </header>
 
-    <div id="openChatbox">
-     <a href="#chatboxOverlay"><img src="img/Chatbox.svg" class="Chatbox" width="200" height="100" /></a> 
-      <div class="overlay" id="chatboxOverlay">
-        <div class="chatbox">
-          <h2>How can I assist you?</h2>
-          <h3>Approximately replies within an hour</h3>
-          <div class="input-field">
-            <input type="email" placeholder="Enter your email address" id="email" />
+    <form action="chatbox.php" method="POST">
+      <div id="openChatbox">
+          <a href="#"><img src="img/Chatbox.svg" class="Chatbox" width="200" height="100" /></a>
+          <div class="overlay" id="chatboxOverlay">
+              <div class="chatbox">
+                  <h2>How can I assist you?</h2>
+                  <h3>Approximately replies within an hour</h3>
+                  <div class="input-field">
+                      <input type="email" name="email" placeholder="Enter your email address" id="email" required />
+                  </div>
+                  <div class="input-field">
+                      <input type="text" name="subject" placeholder="Subject" id="subject" required />
+                  </div>
+                  <div class="input-field">
+                      <textarea name="message" placeholder="Type your message here" id="message" required></textarea>
+                  </div>
+                  <span class="buttons">
+                      <button type="submit" class="send-button" id="sendButton">Send</button>
+                  </span>
+              </div>
           </div>
-          <div class="input-field">
-            <input type="text" placeholder="Subject" id="subject" />
-          </div>
-          <div class="input-field">
-            <textarea placeholder="Type your message here" id="message"></textarea>
-          </div>
-          <span class="buttons">
-            <button class="send-button" id="sendButton">Send</button>
-            <button class="close-button" id="closeButton">Close</button>
-          </span>
-        </div>
       </div>
-    </div>
+  </form>
+  
     
 
       <div class="Mobile-Nav">
