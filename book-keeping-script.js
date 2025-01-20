@@ -56,3 +56,8 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(image);
   });
 });
+
+function toggleOverlay() {
+  const overlay = document.getElementById("chatboxOverlay");
+  overlay.style.display = overlay.style.display === "none" ? "flex" : "none";
+}
